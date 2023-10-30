@@ -1,0 +1,106 @@
+git config --global user.name Anmol
+$ git config --global user.email anmoltrip78@gmail.com
+$ git config --global user.name
+Anmol
+$ git config --global user.email
+anmoltrip78@gmail.com
+// to open a file in vs code 
+$ code .
+// to inialize an empty repository
+$ git init
+
+// $ git status
+untracked files -> file not added in git 
+stages -> changes committed
+modified
+unmodified
+
+// adding a file in git 
+$ git add index.html
+$ git status
+$ git commit
+//  ek vi editor jaisa page khultha haai to go down press esc and :wq to exit
+
+$ touch about.html
+
+anmol@LAPTOP-MPINNODU MINGW64 ~/OneDrive/Desktop/Git commands (master)
+$ touch contact.html
+
+anmol@LAPTOP-MPINNODU MINGW64 ~/OneDrive/Desktop/Git commands (master)
+$ touch monuments.html
+// adding all the three files to git 
+$ git add -A // add all the files to git 
+$ git status
+// if we make some changes in the code of contact .html 
+then git status me 3 file present in staged process and one file ready in 
+modified process 
+so to add that file 
+git add -A
+git status 
+// for easy commiting and editor ka no janjath then 
+$ git commit -m "Added more htmls"
+
+// if to revert back the changes 
+$ git checkout contact.html
+$ git status 
+// if lot of files me change kar diya then 
+git checkout -f
+// git log -> to see previous commits and who made the commit
+git log -p -1 -> filter the commit -> only 1 commit can be seen
+git diff -> what changes were made
+
+
+// the staging process is skipped
+$ git commit -a -m"Skipped Staging Process" 
+
+ls -> to list all the files
+
+// to remove the file and to bring back to untracked file
+$ git rm --cached waste.html
+// to remove the file from the directory
+$ git rm waste2.html
+$ ls
+// Branch se alag copy bana liya jisey me we can work
+$ git branch feature1
+$ git branch
+$ git checkout feature1
+$ git status
+
+
+// working on a feature and then committing back
+$ git checkout extrafeature
+$ git commit -a -m "Added comment "
+$ git checkout master
+$ git log -p -2
+
+//  merging both the branches
+$ git merge extrafeature
+$ git log -p -2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
